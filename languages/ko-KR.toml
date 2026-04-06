@@ -1,0 +1,370 @@
+# ===================================================================
+# META SECTION
+# ===================================================================
+[meta]
+name = "한국어 (대한민국)"
+native_name = "한국어"
+locale = "ko-KR"
+version = "1.0.0"
+author = "QTranslate Team <ahatem925@gmail.com>"
+last_updated = "2026-04-06"
+rtl = false
+
+# ===================================================================
+# COMMON STRINGS
+# ===================================================================
+[common]
+ok = "확인"
+cancel = "취소"
+apply = "적용"
+save = "저장"
+yes = "예"
+no = "아니오"
+close = "닫기"
+save_as = "다른 이름으로 저장..."
+submit = "제출"
+search = "검색..."
+copy = "복사"
+copy_all = "전체 복사"
+paste = "붙여넣기"
+cut = "잘라내기"
+cut_all = "전체 잘라내기"
+undo = "실행 취소"
+version = "버전 %s"
+seconds = "초"
+from = "변환 원문"
+to = "변환 대상"
+listen = "듣기"
+pin = "고정"
+unpin = "고정 해제"
+loading = "로딩 중..."
+none = "없음"
+error = "오류"
+browse = "찾아보기..."
+delete = "삭제"
+rename = "이름 바꾸기..."
+new = "새로 만들기..."
+configure = "설정"
+
+# ===================================================================
+# MAIN APPLICATION WINDOW
+# ===================================================================
+[main_window]
+status_format = "%s 사용 중: %s → %s"
+no_translator = "번역기 없음"
+
+[main_window_history_bar]
+backward_tooltip = "번역 기록에서 이전으로 이동"
+forward_tooltip = "번역 기록에서 다음으로 이동"
+image_translate_tooltip = "화면 영역을 캡처해 텍스트 번역"
+
+[main_window_language_bar]
+clear_tooltip = "입력 텍스트 지우기"
+swap_languages_tooltip = "번역 방향 바꾸기"
+translate_button = "번역"
+
+[main_window_editor_context_menu]
+spelling_suggestions = "맞춤법 제안"
+undo = "@common.undo"
+cut = "@common.cut"
+cut_all = "@common.cut_all"
+copy = "@common.copy"
+copy_all = "@common.copy_all"
+paste = "@common.paste"
+translate = "@main_window_language_bar.translate_button"
+listen = "@common.listen"
+spell_check = "맞춤법 검사"
+
+
+[main_window_main_menu]
+layout_presets = "레이아웃 사전 설정"
+layout_preset_classic = "클래식"
+layout_preset_side_by_side = "나란히 보기"
+layout_preset_compact = "컴팩트"
+instant_translation = "즉시 번역"
+show_extra_output = "추가 결과 표시"
+spell_check = "맞춤법 검사"
+options_submenu = "옵션"
+show_history_bar = "기록 바 표시"
+show_language_bar = "언어 바 표시"
+show_services_panel = "서비스 패널 표시"
+show_status_bar = "상태 표시줄 표시"
+settings = "설정..."
+help_submenu = "도움말"
+how_to_use = "사용 방법"
+contact_us = "문의하기"
+auto_check_for_updates = "자동 업데이트 확인"
+check_for_updates = "업데이트 확인"
+about_qtranslate = "QTranslate 정보"
+exit = "종료"
+
+[main_window_status_bar]
+ready_message = "준비됨"
+notifications_tooltip = "알림"
+notifications_empty_tooltip = "새 알림 없음"
+
+# ===================================================================
+# SYSTEM TRAY MENU
+# ===================================================================
+[system_tray_menu]
+show_application = "QTranslate 표시"
+recognize_text = "텍스트 인식 (OCR)"
+dictionary = "사전"
+history = "기록"
+settings = "@main_window_main_menu.settings"
+enable_hotkeys = "전역 단축키 사용"
+exit = "@main_window_main_menu.exit"
+
+# ===================================================================
+# SETTINGS DIALOG (SHELL & NAVIGATION)
+# ===================================================================
+[settings_dialog]
+title = "설정"
+unsaved_changes = "● 저장되지 않은 변경 사항"
+saving = "저장 중..."
+save_failed_title = "저장 실패"
+reset_defaults_button = "기본값으로 초기화"
+reset_confirmation_title = "기본값으로 초기화"
+reset_confirmation_message = "모든 설정을 기본값으로 되돌릴까요?\n이 동작은 되돌릴 수 없습니다."
+
+[settings_dialog_sidebar]
+general = "일반"
+appearance = "모양"
+services = "서비스 및 프리셋"
+plugins = "플러그인"
+hotkeys = "키보드 및 단축키"
+translation = "번역"
+window_layout = "창 및 레이아웃"
+
+# ===================================================================
+# SETTINGS PAGES
+# ===================================================================
+
+[settings_general]
+startup_group = "시작"
+launch_on_startup = "시스템 시작 시 실행"
+updates_group = "업데이트"
+auto_check_updates = "자동으로 업데이트 확인"
+history_group = "기록"
+enable_history = "번역 기록 사용"
+clear_history_on_exit = "앱 종료 시 기록 삭제"
+clear_history_hint = "해당 옵션이 켜져 있으면 저장된 번역이 종료 시 영구 삭제됩니다."
+
+[settings_appearance]
+language_group = "언어"
+interface_language = "인터페이스 언어:"
+language_hint = "변경 사항이 즉시 적용됩니다. 일부 레이블은 완전 반영을 위해 재시작이 필요할 수 있습니다."
+theme_group = "테마"
+theme_label = "테마:"
+unified_title_bar = "통합 제목 표시줄 사용"
+scale_group = "UI 크기"
+scale_label = "확대/축소:"
+scale_hint = "스케일 변경 사항은 완전히 적용하려면 앱 재시작이 필요합니다."
+fonts_group = "글꼴"
+ui_font = "UI 글꼴:"
+editor_font = "편집기 글꼴:"
+fallback_font = "대체 글꼴:"
+fallback_hint = "대체 글꼴은 기본 편집기 글꼴이 표시할 수 없는 문자를 위해 사용됩니다."
+loading_fonts = "<글꼴 로딩 중...>"
+font_preview_text = "The quick brown fox jumps over the lazy dog — 大きな茶色の狐が怠け者の犬を飛び越えた"
+
+[settings_services]
+presets_group = "현재 프리셋"
+current_preset = "현재 프리셋:"
+preset_hint = "프리셋을 통해 여러 서비스 조합을 저장해 빠르게 전환할 수 있습니다."
+new_preset_btn = "@common.new"
+rename_preset_btn = "@common.rename"
+delete_preset_btn = "@common.delete"
+config_group = "서비스 구성"
+translator = "번역기:"
+tts = "텍스트 음성 변환:"
+ocr = "OCR:"
+spell_checker = "맞춤법 검사기:"
+dictionary = "사전:"
+summarizer = "요약기:"
+rewriter = "문체 변환기:"
+# Dialogs
+new_preset_title = "새 프리셋"
+new_preset_prompt = "새 프리셋 이름을 입력하세요:"
+rename_preset_title = "프리셋 이름 바꾸기"
+rename_preset_prompt = "새 이름을 입력하세요:"
+delete_preset_title = "프리셋 삭제"
+delete_preset_confirm = "프리셋 \"%s\"을(를) 삭제할까요?\n이 동작은 되돌릴 수 없습니다."
+
+[settings_plugins]
+install_plugin = "플러그인 설치..."
+empty_selection_hint = "세부 정보를 보려면 플러그인을 선택하세요"
+provided_services = "제공 서비스"
+plugin_error_label = "오류"
+status_enabled = "사용"
+status_disabled = "미사용"
+status_failed = "실패"
+status_verification = "확인 대기 중"
+# Actions
+btn_disable = "비활성화"
+btn_enable = "활성화"
+btn_configure = "설정..."
+btn_accept_update = "업데이트 적용"
+btn_clean_install = "완전 재설치"
+btn_uninstall = "제거"
+tip_accept_update = "기존 데이터를 유지하고 플러그인을 다시 활성화합니다"
+tip_clean_install = "재활성화 전 플러그인 데이터를 모두 삭제합니다"
+# Dialogs
+install_dialog_title = "플러그인 JAR 선택"
+install_dialog_filter = "QTranslate 플러그인 (*.jar)"
+install_success_title = "플러그인 설치 완료"
+install_success_msg = "플러그인이 설치되었습니다."
+install_fail_title = "설치 실패"
+uninstall_confirm_title = "플러그인 제거"
+uninstall_confirm_msg = "\"%s\"를(을) 제거할까요?\n모든 플러그인 데이터가 영구 삭제됩니다."
+no_settings_msg = "이 플러그인에는 설정 항목이 없습니다."
+
+[settings_hotkeys]
+global_group = "전역 단축키"
+enable_global = "전역 단축키 사용"
+assignments_group = "단축키 할당"
+column_action = "동작"
+column_hotkey = "단축키"
+column_description = "설명"
+customization_hint = "단축키 사용자 지정은 추후 업데이트에서 지원됩니다."
+column_scope = "범위"
+scope_global = "전역"
+scope_local = "지역"
+# Default Actions
+action_show_main = "메인 창 표시"
+action_quick_translate = "빠른 번역"
+action_listen = "선택 영역 읽기"
+action_ocr = "화면에서 OCR"
+action_replace = "선택 영역을 번역문으로 교체 (실험 기능)"
+action_cycle_language = "대상 언어 순환"
+scope_toggle_hint = "전역/로컬을 전환하려면 클릭"
+
+# Default Actions Descriptions
+desc_show_main = "Ctrl을 두 번 눌러 메인 창 표시"
+desc_quick_translate = "선택한 텍스트를 팝업으로 번역"
+desc_listen = "선택한 텍스트를 소리로 읽기"
+desc_ocr = "화면 영역을 캡처해 텍스트 추출"
+desc_replace = "선택 텍스트를 번역해 원 위치에 붙여넣기(실험 기능)"
+desc_cycle = "창을 열지 않고 사용 가능한 대상 언어를 순환"
+
+edit_hint = "행을 더블클릭하거나 선택 후 편집을 눌러 바로 가기 키를 변경하세요."
+edit_button = "편집…"
+clear_button = "지우기"
+reset_button = "모든 단축키 기본값으로 초기화"
+no_binding = "(없음)"
+reset_confirmation = "모든 단축키를 기본값으로 초기화할까요?"
+reset_title = "단축키 초기화"
+recorder_title = "단축키 기록"
+recorder_prompt = "할당할 조합 키를 누르세요:"
+double_ctrl = "Ctrl 두 번 누르기"
+recorder_waiting = "— 조합 키를 누르세요 —"
+recorder_hint = "취소하려면 Escape 키를 누르세요"
+
+
+[settings_translation]
+behavior_group = "동작"
+instant_translation = "즉시 번역 (입력과 동시에 번역)"
+instant_hint = "입력 중지 후 자동으로 번역이 시작됩니다."
+spell_check_input = "입력 텍스트 맞춤법 검사 사용"
+extra_output_group = "추가 출력"
+extra_output_type = "유형:"
+extra_output_hint = "메인 번역 결과 아래에 보조 결과 패널을 표시합니다."
+extra_output_source = "원본:"
+source_use_translated = "번역 텍스트 사용"
+source_use_input = "입력 텍스트 사용"
+remove_line_breaks = "입력에서 줄바꿈 제거"
+remove_line_breaks_hint = "PDF처럼 줄 단위가 강제 개행된 텍스트를 복사할 때 유용합니다"
+pinned_languages_group = "언어 필터"
+pinned_languages_hint = "대상 언어 목록에 표시할 언어를 선택하세요. 모두 해제하면 사용 가능한 모든 언어가 표시됩니다."
+pinned_languages_clear = "필터 지우기 (전체 표시)"
+# Types
+type_none = "@common.none"
+type_backward = "역번역"
+type_summarize = "요약"
+type_rewrite = "변형"
+# Summary length options (shown when type = Summarisation)
+summary_length = "요약 길이:"
+summary_length_short = "짧게 (한 문장)"
+summary_length_medium = "보통 (몇 개 문장)"
+summary_length_long = "길게 (상세)"
+# Rewrite style options (shown when type = Rewriting)
+rewrite_style = "문체 스타일:"
+rewrite_style_formal = "격식"
+rewrite_style_casual = "캐주얼"
+rewrite_style_concise = "간결"
+rewrite_style_detailed = "상세"
+rewrite_style_simplified = "단순화"
+
+[settings_window]
+layout_group = "레이아웃"
+layout_preset = "레이아웃 사전 설정:"
+toolbars_group = "툴바"
+show_history_bar = "기록 탐색 바 표시"
+show_language_bar = "언어 선택 바 표시"
+show_services_panel = "서비스 패널 표시"
+show_status_bar = "상태 표시줄 표시"
+popup_group = "빠른 번역 팝업"
+auto_size = "팝업 내용을 기준으로 자동 크기 조정"
+auto_position = "커서 근처에 팝업 자동 위치"
+transparency = "배경 투명도:"
+# Close button
+close_behavior_group   = "닫기 버튼 동작"
+close_button           = "닫을 때:"
+close_behavior_ask     = "항상 묻기"
+close_behavior_minimize = "트레이로 최소화"
+close_behavior_exit    = "앱 종료"
+close_behavior_hint    = "× 버튼을 눌렀을 때 동작을 지정합니다. 닫기 대화상자에서 별도 설정할 수도 있습니다."
+
+# ===================================================================
+# DYNAMIC PLUGIN CONFIGURATION
+# ===================================================================
+[plugin_config]
+title_format = "구성 — %s"
+required_fields_error_title = "필수 항목"
+required_fields_error_msg = "필수 항목을 모두 입력하세요:"
+
+# ===================================================================
+# OTHER DIALOGS
+# ===================================================================
+[about_dialog]
+title = "QTranslate 정보"
+description = "원본 QTranslate는 더 이상 개발되지 않습니다. 이 버전은 동일한 아이디어로 전면 재작성되었으며, 플러그인 기반으로 최신 상태를 유지할 수 있습니다."
+
+[history_dialog]
+title = "번역 기록"
+
+[update_dialog]
+title = "업데이트 사용 가능"
+header = "새 버전의 QTranslate를 사용할 수 있습니다!"
+# %1$s = new version number, %2$s = current version number
+details_format = "버전 %s 사용 가능 (현재 %s). 업데이트하시겠습니까?"
+release_notes_label = "릴리스 노트:"
+skip_button = "이 버전 건너뛰기"
+remind_later_button = "나중에 알림"
+download_button = "다운로드 페이지로 이동"
+
+# ===================================================================
+# CLOSE DIALOG
+# ===================================================================
+[close_dialog]
+title           = "QTranslate 종료"
+message         = "어떤 동작을 할까요?"
+minimize_to_tray = "트레이로 최소화"
+exit            = "종료"
+remember_choice = "이 선택을 기억"
+
+# ===================================================================
+# EXTRA OUTPUT PANEL
+# ===================================================================
+[extra_output]
+label_backward = "역번역"
+label_summary = "요약"
+label_rewrite = "문장 바꾸기"
+
+# ===================================================================
+# NOTIFICATIONS & ERRORS
+# ===================================================================
+[notifications]
+language_not_supported_format = "언어 '%s'는(은) %s에서 지원되지 않습니다."
+tts_not_supported_format = "텍스트 음성 변환은 %s에서 지원되지 않습니다."
+unknown_error = "알 수 없는 오류가 발생했습니다."
